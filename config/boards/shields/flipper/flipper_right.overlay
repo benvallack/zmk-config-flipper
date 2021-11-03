@@ -7,5 +7,5 @@
 #include "flipper.dtsi"
 
 &default_transform {
-	col-offset = <16>;
+	col-offset = <15>;
 };
