@@ -1,4 +1,3 @@
-
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
@@ -45,6 +44,31 @@
 	    key-positions = <4 5>;
             bindings = <&to 3>;
         };
+        lshift {
+            timeout-ms = <50>;
+	    key-positions = <16 17>;
+            bindings = <&kp LSHIFT>;
+        };
+        rshift {
+            timeout-ms = <50>;
+	    key-positions = <24 25>;
+            bindings = <&kp RSHIFT>;
+        };
+        comma {
+            timeout-ms = <50>;
+	    key-positions = <5 27>;
+            bindings = <&kp COMMA>;
+        };
+        apos {
+            timeout-ms = <50>;
+	    key-positions = <15 27>;
+            bindings = <&kp SQT>;
+        };
+        slsh {
+            timeout-ms = <50>;
+	    key-positions = <25 27>;
+            bindings = <&kp SLASH>;
+        };
     };
 
     behaviors {
@@ -70,19 +94,10 @@
             compatible = "zmk,behavior-hold-tap";
             label = "TAPDANCE";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <190>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-        };
-	bl: layertap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYERTAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&to>, <&kp>;
         };
     };
 
@@ -91,10 +106,10 @@
                 
        		default_layer {
 		bindings = <
-				&kp C 	   	&kp L 		&kp M							&kp F 		&td SEMI U    		&td MINUS Z 
+				&kp C 	   	&kp L 		&kp M							&kp F 		&kp U    		&kp Z 
 		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	&kp G 			&kp P  		&hm RGUI N    	&hm RALT K    		&hm RCTL A 	&kp O
-		&hs LSHIFT Q 	&td SLASH V 	&kp W 		&kp D 		&kp J   		&kp B 		&td QMARK H  	&td UNDERSCORE Y 	&td EXCL DOT 	&hs RSHIFT X
-          									&mt LC(LS(LALT)) SPC 	&td COMMA E
+		&kp Q	 	&kp V 		&kp W 		&kp D 		&kp J   		&kp B 		&kp H  	&kp Y 	&kp DOT 		&kp X
+          									&mt LC(LS(LALT)) SPC 	&kp E
 		>;
 		};
 
