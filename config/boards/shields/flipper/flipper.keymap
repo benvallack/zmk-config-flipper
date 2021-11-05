@@ -69,6 +69,11 @@
 	    key-positions = <25 27>;
             bindings = <&kp SLASH>;
         };
+        exclm {
+            timeout-ms = <50>;
+	    key-positions = <24 27>;
+            bindings = <&kp EXCL>;
+        };
     };
 
     behaviors {
