@@ -74,6 +74,11 @@
 	    key-positions = <24 27>;
             bindings = <&kp EXCL>;
         };
+	semi {
+            timeout-ms = <50>;
+	    key-positions = <23 27>;
+	    bindings = <&kp SEMI>;
+        };
     };
 
     behaviors {
