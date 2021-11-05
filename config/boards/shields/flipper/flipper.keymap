@@ -63,6 +63,26 @@
 	    key-positions = <3 5>;
             bindings = <&sl 5>;
         };
+        g {
+            timeout-ms = <20>;
+	    key-positions = <9 10>;
+            bindings = <&kp g>;
+        };
+        j {
+            timeout-ms = <20>;
+	    key-positions = <19 20>;
+            bindings = <&kp j>;
+        };
+        p {
+            timeout-ms = <20>;
+	    key-positions = <11	12>;
+            bindings = <&kp p>;
+        };
+        b {
+            timeout-ms = <20>;
+	    key-positions = <21	22>;
+            bindings = <&kp b>;
+        };
         
     };
 
