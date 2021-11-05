@@ -10,6 +10,10 @@
 #include <dt-bindings/zmk/mouse.h>
 
 
+&mt {
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
+ };
 &sk {
      release-after-ms = <2000>;
      quick-release;
