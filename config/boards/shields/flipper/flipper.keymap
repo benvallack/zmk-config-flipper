@@ -66,22 +66,22 @@
         g {
             timeout-ms = <20>;
 	    key-positions = <9 10>;
-            bindings = <&kp g>;
+            bindings = <&kp G>;
         };
         j {
             timeout-ms = <20>;
 	    key-positions = <19 20>;
-            bindings = <&kp j>;
+            bindings = <&kp J>;
         };
         p {
             timeout-ms = <20>;
 	    key-positions = <11	12>;
-            bindings = <&kp p>;
+            bindings = <&kp P>;
         };
         b {
             timeout-ms = <20>;
 	    key-positions = <21	22>;
-            bindings = <&kp b>;
+            bindings = <&kp B>;
         };
         
     };
