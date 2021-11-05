@@ -29,13 +29,13 @@
             bindings = <&kp ESC>;
         };
         combo_bksc {
-            timeout-ms = <50>;
-            key-positions = <22 23>;
+            timeout-ms = <20>;
+            key-positions = <23 24>;
             bindings = <&kp BKSP>;
         };
         combo_ent {
-            timeout-ms = <50>;
-	    key-positions = <23 24>;
+            timeout-ms = <20>;
+	    key-positions = <14 15>;
             bindings = <&kp RET>;
         };
         combo_1 {
