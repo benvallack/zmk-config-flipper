@@ -166,9 +166,9 @@
 
 		os {
 		bindings = <
-				&trans 		&trans 		&trans 					&kp SEMI	&kp COLON	&kp COMMA
-		&kp EXCL  	&kp QMARK 	&kp LS(MINUS)	&kp LA(LS(RBKT))	&trans 	&trans 	&trans 		&trans 		&trans		&kp MINUS 
-		&trans 		&kp SLASH 	&trans 		&trans 			&trans 	&trans 	&trans  	&trans  	&trans 		&trans   
+				&trans 		&trans 				&trans 					&kp SEMI	&kp COLON	&kp COMMA
+		&kp TAB  	&kp QMARK 	&hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT))  	&trans 	&trans 	&kp LS(MINUS)	&trans 		&trans		&kp MINUS 
+		&trans 		&kp SLASH 	&kp LA(LBKT)			&kp LA(LS(LBKT))  	&trans 	&trans 	&trans  	&trans  	&trans 		&trans   
 				 							&to 0 	&to 1 
 		>;
 		};
