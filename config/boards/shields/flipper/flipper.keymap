@@ -65,22 +65,22 @@
         };
         g {
             timeout-ms = <20>;
-	    key-positions = <10 11>;
+	    key-positions = <8 9>;
             bindings = <&kp G>;
         };
         j {
             timeout-ms = <20>;
-	    key-positions = <20 21>;
+	    key-positions = <18 19>;
             bindings = <&kp J>;
         };
         p {
             timeout-ms = <20>;
-	    key-positions = <10	11>;
+	    key-positions = <12	13>;
             bindings = <&kp P>;
         };
         b {
             timeout-ms = <20>;
-	    key-positions = <20	21>;
+	    key-positions = <22	23>;
             bindings = <&kp B>;
         };
         
