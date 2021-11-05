@@ -44,41 +44,22 @@
 	    key-positions = <4 5>;
             bindings = <&to 3>;
         };
-        lshift {
+        caps {
             timeout-ms = <50>;
 	    key-positions = <16 17>;
-            bindings = <&kp LSHIFT>;
+            bindings = <&kp CAPS>;
         };
         rshift {
             timeout-ms = <50>;
 	    key-positions = <24 25>;
-            bindings = <&kp RSHIFT>;
+            bindings = <&sk RSHIFT>;
         };
-        comma {
+        oneshot {
             timeout-ms = <50>;
-	    key-positions = <5 27>;
-            bindings = <&kp COMMA>;
+	    key-positions = <3 5>;
+            bindings = <&sl 5>;
         };
-        apos {
-            timeout-ms = <50>;
-	    key-positions = <15 27>;
-            bindings = <&kp SQT>;
-        };
-        slsh {
-            timeout-ms = <50>;
-	    key-positions = <25 27>;
-            bindings = <&kp SLASH>;
-        };
-        exclm {
-            timeout-ms = <50>;
-	    key-positions = <24 27>;
-            bindings = <&kp EXCL>;
-        };
-	semi {
-            timeout-ms = <50>;
-	    key-positions = <23 27>;
-	    bindings = <&kp SEMI>;
-        };
+        
     };
 
     behaviors {
@@ -118,7 +99,7 @@
 		bindings = <
 				&kp C 	   	&kp L 		&kp M							&kp F 		&kp U    		&kp Z 
 		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	&kp G 			&kp P  		&hm RGUI N    	&hm RALT K    		&hm RCTL A 	&kp O
-		&kp Q	 	&kp V 		&kp W 		&kp D 		&kp J   		&kp B 		&kp H  	&kp Y 	&kp DOT 		&kp X
+		&td Q	 	&kp V 		&kp W 		&kp D 		&kp J   		&kp B 		&kp H  		&kp Y 			&kp DOT		&kp X
           									&mt LC(LS(LALT)) SPC 	&kp E
 		>;
 		};
@@ -154,6 +135,14 @@
 				&trans 		&trans 		&trans 			&trans 	&trans	&trans 
 		&bootloader  	&trans 		&trans 		&trans 	&trans 	&trans 	&trans 	&trans 	&trans	&trans 
 		&bt BT_PRV	&bt BT_NXT 	&bt BT_CLR 	&trans 	&trans 	&trans 	&trans  &trans  &trans 	&trans   
+				 					&to 0 	&to 1 
+		>;
+		};
+		oneshot {
+		bindings = <
+				&trans 		&trans 		&trans 				&kp SEMI	&kp COLON	&kp COMMA
+		&kp EXCL  	&kp QMARK 	&kp LS(MINUS)	&kp LA(LS(RBKT)	&trans 	&trans 	&trans 		&trans 		&trans	&kp MINUS 
+		&trans 		&kp SLASH 	&trans 		&trans 		&trans 	&trans 	&trans  	&trans  	&trans 	&trans   
 				 					&to 0 	&to 1 
 		>;
 		};
