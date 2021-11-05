@@ -130,6 +130,7 @@
 								 					&to 0 			&kp RGUI 
 		>;
 		};
+
 		bt {
 		bindings = <
 				&trans 		&trans 		&trans 			&trans 	&trans	&trans 
@@ -138,6 +139,7 @@
 				 					&to 0 	&to 1 
 		>;
 		};
+
 		oneshot {
 		bindings = <
 				&trans 		&trans 		&trans 					&kp SEMI	&kp COLON	&kp COMMA
