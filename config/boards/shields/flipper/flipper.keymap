@@ -31,7 +31,7 @@
         combo_bksc {
             timeout-ms = <20>;
             key-positions = <23 24>;
-            bindings = <&kp BKSP>;
+            bindings = <&to 3>;
         };
         combo_ent {
             timeout-ms = <20>;
@@ -46,7 +46,7 @@
         combo_3 {
             timeout-ms = <50>;
 	    key-positions = <4 5>;
-            bindings = <&to 3>;
+            bindings = <&kp BKSP>;
         };
         caps {
             timeout-ms = <50>;
@@ -67,23 +67,107 @@
             timeout-ms = <20>;
 	    key-positions = <8 9>;
             bindings = <&kp G>;
+	    layers = <0>
         };
         j {
             timeout-ms = <20>;
 	    key-positions = <18 19>;
             bindings = <&kp J>;
+	    layers = <0>
         };
         p {
             timeout-ms = <20>;
 	    key-positions = <12	13>;
             bindings = <&kp P>;
+	    layers = <0>
         };
         b {
             timeout-ms = <20>;
 	    key-positions = <22	23>;
             bindings = <&kp B>;
+	    layers = <0>
+        };
+        SQT {
+            timeout-ms = <20>;
+	    key-positions = <8 9>;
+            bindings = <&kp SQT>;
+	    layers = <1,5>
+        };
+	DQT {
+            timeout-ms = <20>;
+	    key-positions = <18 19>;
+            bindings = <&kp DQT>;
+	    layers = <1,5>
+        };
+        BSLH {
+            timeout-ms = <20>;
+	    key-positions = <12	13>;
+            bindings = <&kp BSLH>;
+	    layers = <1>
+        };
+        LBKT {
+            timeout-ms = <20>;
+	    key-positions = <22	23>;
+            bindings = <&kp LBKT>;
+	    layers = <1>
         };
         
+        plus {
+            timeout-ms = <20>;
+	    key-positions = <8 9>;
+            bindings = <&kp LS(EQUAL)>; 
+	    layers = <2>
+        };
+	PRCNT {
+            timeout-ms = <20>;
+	    key-positions = <18 19>;
+            bindings = <&kp PRCNT>;
+	    layers = <2>
+        };
+        EQUAL {
+            timeout-ms = <20>;
+	    key-positions = <12	13>;
+            bindings = <&kp EQUAL>;
+	    layers = <2>
+        };
+        N0 {
+            timeout-ms = <20>;
+	    key-positions = <22	23>;
+            bindings = <&kp N0>;
+	    layers = <2>
+        };
+        LALT {
+            timeout-ms = <20>;
+	    key-positions = <8 9>;
+            bindings = <&kp LALT>; 
+	    layers = <3>
+        };
+	DEL {
+            timeout-ms = <20>;
+	    key-positions = <18 19>;
+            bindings = <&kp DEL>;
+	    layers = <3>
+        };
+        LEFT {
+            timeout-ms = <20>;
+	    key-positions = <12	13>;
+            bindings = <&kp LEFT>;
+	    layers = <3>
+        };
+        LCLK {
+            timeout-ms = <20>;
+	    key-positions = <22	23>;
+            bindings = <&mkp LCLK>;
+	    layers = <3>
+        };
+
+
+
+
+
+
+
+
     };
 
     behaviors {
@@ -122,8 +206,8 @@
        		default_layer {
 		bindings = <
 				&kp C 	   	&kp L 		&kp M							&kp F 		&kp U    		&kp Z 
-		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	&kp G 			&kp P  		&hm RGUI N    	&hm RALT K    		&hm RCTL A 	&kp O
-		&kp Q	 	&kp V 		&kp W 		&kp D 		&kp J   		&kp B 		&kp H  		&kp Y 			&kp DOT		&kp X
+		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	&trans 			&trans 		&hm RGUI N    	&hm RALT K    		&hm RCTL A 	&kp O
+		&kp Q	 	&kp V 		&kp W 		&kp D 		&trans   		&trans 		&kp H  		&kp Y 			&kp DOT		&kp X
           									&mt LC(LS(LALT)) SPC 	&kp E
 		>;
 		};
@@ -131,27 +215,27 @@
        		left_layer {
 		bindings = <
 					&kp ATSN   	&td LC(LG(LS(N4))) LS(N3) 	&kp DLLR    							&kp LS(COMMA) 	&kp LS(DOT) 	&kp CARET 
-		&kp TAB    		&hm LCTL EQUAL  &hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT))   	&kp SQT 	&kp BSLH 	&hm RGUI LBRC  	&hm RALT RBRC 	&hm RSHIFT PIPE &trans
-		&hs LSHIFT TILDE	&kp LA(N3) 	&kp LA(LBKT)			&kp LA(LS(LBKT))  		&kp DQT 	&kp LBKT 	&kp LPRN 	&kp RPRN 	&kp RBKT  	&kp LSHIFT
+		&kp TAB    		&hm LCTL EQUAL  &hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT))   	&trans	 	&trans	 	&hm RGUI LBRC  	&hm RALT RBRC 	&hm RSHIFT PIPE &trans
+		&hs LSHIFT TILDE	&kp LA(N3) 	&kp LA(LBKT)			&kp LA(LS(LBKT))  		&trans	 	&trans	 	&kp LPRN 	&kp RPRN 	&kp RBKT  	&kp LSHIFT
 															&to 0 		&to 2 
 		>;
 		};
 
 		right_layer {
 		bindings = <
-			&kp C_PP 	&kp C_PREV  	&kp C_NEXT  								&kp N7 		&kp N8 	&kp N9 
-		&kp TAB	&trans   	&kp C_VOL_DN	&hm LGUI C_VOL_UP	&kp LS(EQUAL) 			&kp EQUAL 	&hm RGUI N4	&kp N5 	&kp N6   	&kp LS(MINUS)
-		&to 4  	&kp AMPS	&kp SLASH 	&kp STAR 		&kp PRCNT    			&kp N0 		&kp N1 		&kp N2 	&td DOT N3  	&trans 
-					  					&to 0 				&kp RGUI
+			&kp C_PP 	&kp C_PREV  	&kp C_NEXT  							&kp N7 		&kp N8 	&kp N9 
+		&kp TAB	&trans   	&kp C_VOL_DN	&hm LGUI C_VOL_UP	&trans 			&trans 		&hm RGUI N4	&kp N5 	&kp N6   	&kp LS(MINUS)
+		&to 4  	&kp AMPS	&kp SLASH 	&kp STAR 		&trans    		&trans 		&kp N1 		&kp N2 	&td DOT N3  	&trans 
+					  					&to 0 			&kp RGUI
 		>;
 		};
 
 		tri_layer {
 		bindings = <
 					&mwh SCROLL_LEFT	&mmv MOVE_UP    &mwh SCROLL_RIGHT    						&kp LC(LS(TAB))   	&kp RC(TAB)	&kp LG(LBKT) 
-		&kp TAB			&mmv MOVE_LEFT 		&mmv MOVE_DOWN	&mmv MOVE_RIGHT 	&kp LALT 		&kp LEFT 	&kp DOWN  		&kp UP 		&kp RIGHT 	&kp LG(RBKT)
-		&td LG(GRAVE) GRAVE 	&mkp RCLK  		&mwh SCROLL_UP	&mwh SCROLL_DOWN 	&kp DEL   		&mkp LCLK 	&kp PG_DN  		&kp PG_UP  	&trans		&kp LSHIFT 	   
-								 					&to 0 			&kp RGUI 
+		&kp TAB			&mmv MOVE_LEFT 		&mmv MOVE_DOWN	&mmv MOVE_RIGHT 	&trans 		&trans		&kp DOWN  		&kp UP 		&kp RIGHT 	&kp LG(RBKT)
+		&td LG(GRAVE) GRAVE 	&mkp RCLK  		&mwh SCROLL_UP	&mwh SCROLL_DOWN 	&trans  	&trans 		&kp PG_DN  		&kp PG_UP  	&trans		&kp LSHIFT 	   
+								 					&to 0 		&kp RGUI 
 		>;
 		};
 
@@ -169,7 +253,8 @@
 				&trans 		&trans 				&trans 					&kp SEMI	&kp COLON	&kp COMMA
 		&kp TAB  	&kp QMARK 	&hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT))  	&trans 	&trans 	&kp LS(MINUS)	&trans 		&trans		&kp MINUS 
 		&trans 		&kp SLASH 	&kp LA(LBKT)			&kp LA(LS(LBKT))  	&trans 	&trans 	&trans  	&trans  	&trans 		&trans   
-				 							&to 0 	&to 1 
+				 									&to 0 	&to 1 
+
 		>;
 		};
         
