@@ -124,10 +124,10 @@
             bindings = <&kp PRCNT>;
 	    layers = <2>; 
         };
-        equal {
+        minus {
             timeout-ms = <20>;
 	    key-positions = <12	13>;
-            bindings = <&kp EQUAL>;
+            bindings = <&kp MINUS>;
 	    layers = <2>; 
         };
         n0 {
@@ -218,7 +218,7 @@
 		right_layer {
 		bindings = <
 			&kp C_PP 	&kp C_PREV  	&kp C_NEXT  							&kp N7 		&kp N8 	&kp N9 
-		&kp TAB	&trans   	&kp C_VOL_DN	&hm LGUI C_VOL_UP	&trans 			&trans 		&hm RGUI N4	&kp N5 	&kp N6   	&kp LS(MINUS)
+		&kp TAB	&trans   	&kp C_VOL_DN	&hm LGUI C_VOL_UP	&trans 			&trans 		&hm RGUI N4	&kp N5 	&kp N6   	&kp EQUAL
 		&to 4  	&kp AMPS	&kp SLASH 	&kp STAR 		&trans    		&trans 		&kp N1 		&kp N2 	&td DOT N3  	&trans 
 					  					&to 0 			&kp RGUI
 		>;
