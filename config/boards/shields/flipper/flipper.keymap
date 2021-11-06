@@ -245,7 +245,7 @@
 		os {
 		bindings = <
 				&kp ATSN	&kp EXCL 			&trans 					&kp SEMI	&kp COLON	&kp COMMA
-		&kp TAB  	&kp QMARK 	&hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT))  	&trans 	&trans 	&kp LS(MINUS)	&trans 		&trans		&kp MINUS 
+		&kp TAB  	&kp QMARK 	&kp LA(RBKT)      		&kp LA(LS(RBKT))  	&trans 	&trans 	&kp LS(MINUS)	&trans 		&trans		&kp MINUS 
 		&trans 		&kp SLASH 	&kp LA(LBKT)			&kp LA(LS(LBKT))  	&trans 	&trans 	&trans  	&trans  	&trans 		&trans   
 				 									&to 0 	&to 1 
 
