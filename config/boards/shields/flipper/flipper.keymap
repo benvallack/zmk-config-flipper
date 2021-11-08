@@ -201,14 +201,14 @@
 		bindings = <
 				&kp C 	   	&kp L 		&kp M								&kp F 		&kp U    		&kp Z 
 		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	&kp LC(LG(Q)) 		&kp LC(LG(SPACE)) 	&hm RGUI N    	&hm RALT K    		&hm RCTL A 	&kp O
-		&kp Q	 	&kp V 		&kp W 		&kp D 		&kp LA(LG(ESC))   	&kp LC(SPACE)		&kp H  		&kp Y 			&kp DOT		&kp X
+		&kp Q	 	&kp V 		&kp W 		&kp D 		&kp LC(LG(LS(N4)))   	&kp LC(SPACE)		&kp H  		&kp Y 			&kp DOT		&kp X
           									&mt LC(LS(LALT)) SPC 	&kp E
 		>;
 		};
 
        		left_layer {
 		bindings = <
-					&kp ATSN   	&td LC(LG(LS(N4))) LS(N3) 	&kp DLLR    							&kp LS(COMMA) 	&kp LS(DOT) 	&kp CARET 
+					&kp ATSN   	&kp LS(N3) 			&kp DLLR    							&kp LS(COMMA) 	&kp LS(DOT) 	&kp CARET 
 		&kp TAB    		&hm LCTL EQUAL  &hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT))   	&trans	 	&trans	 	&hm RGUI LBRC  	&hm RALT RBRC 	&hm RSHIFT PIPE &trans
 		&hs LSHIFT TILDE	&kp LA(N3) 	&kp LA(LBKT)			&kp LA(LS(LBKT))  		&trans	 	&trans	 	&kp LPRN 	&kp RPRN 	&kp RBKT  	&kp LSHIFT
 															&to 0 		&to 2 
