@@ -219,14 +219,14 @@
 		bindings = <
 			&kp C_PP 	&kp C_PREV  	&kp C_NEXT  							&kp N7 		&kp N8 	&kp N9 
 		&kp TAB	&trans   	&kp C_VOL_DN	&hm LGUI C_VOL_UP	&trans 			&trans 		&hm RGUI N4	&kp N5 	&kp N6   	&kp EQUAL
-		&to 4  	&trans 		&trans	  	&trans	 		&trans    		&trans 		&kp N1 		&kp N2 	&td DOT N3  	&trans 
+		&to 4  	&trans 		&trans	  	&trans 			&trans    		&trans 		&kp N1 		&kp N2 	&kp N3  	&kp DOT 
 					  					&to 0 			&kp RGUI
 		>;
 		};
 
 		tri_layer {
 		bindings = <
-					&mwh SCROLL_LEFT	&mmv MOVE_UP    &mwh SCROLL_RIGHT    						&kp LC(LS(TAB))   	&kp RC(TAB)	&kp LG(LBKT) 
+					&mwh SCROLL_LEFT	&mmv MOVE_UP    &mwh SCROLL_RIGHT    					&kp LC(LS(TAB))   	&kp RC(TAB)	&kp LG(LBKT) 
 		&kp TAB			&mmv MOVE_LEFT 		&mmv MOVE_DOWN	&mmv MOVE_RIGHT 	&trans 		&trans		&kp DOWN  		&kp UP 		&kp RIGHT 	&kp LG(RBKT)
 		&td LG(GRAVE) GRAVE 	&mkp RCLK  		&mwh SCROLL_UP	&mwh SCROLL_DOWN 	&trans  	&trans 		&kp PG_DN  		&kp PG_UP  	&trans		&kp LSHIFT 	   
 								 					&to 0 		&kp RGUI 
