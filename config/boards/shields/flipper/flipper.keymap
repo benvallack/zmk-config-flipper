@@ -64,7 +64,7 @@
             bindings = <&sl 5>;
         };
         g {
-            timeout-ms = <20>;
+            timeout-ms = <10>;
 	    key-positions = <8 9>;
             bindings = <&kp G>;
 	    layers = <0>; 
